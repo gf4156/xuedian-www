@@ -179,11 +179,11 @@ header.uk-sticky-fixed {
 .download-card ul {
     margin: 40px 0 0 0;
     padding: 0;
-    li {
-        padding: 0;
-        list-style: none;
-        margin: 10px 0;
-    }
+}
+.download-card ul li {
+    padding: 0;
+    list-style: none;
+    margin: 10px 0;
 }
 .download-card a.store-link {
     text-transform: none;
