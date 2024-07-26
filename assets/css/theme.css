@@ -25,98 +25,97 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
+}
 
-    header {
-        padding: 20px 0;
-        color: #1dc7da;
-        background-color: transparent;
-        box-shadow: none;
-        transition: all 1s;
+header {
+    padding: 20px 0;
+    color: #1dc7da;
+    background-color: transparent;
+    box-shadow: none;
+    transition: all 1s;
+}
 
-        .logo {
-            img {
-                border-radius: 20px;
-                vertical-align: middle;
-            }
-            span {
-                margin-left: 10px;
-                font-size: 22px;
-                color: #0d0a46;
-            }
-        }
+.logo img {
+    border-radius: 20px;
+    vertical-align: middle;
+}
 
-        .uk-navbar-nav > li > a {
-            color: #0d0a46;
-            text-transform: lowercase;
-        }
+.logo span {
+    margin-left: 10px;
+    font-size: 22px;
+    color: #0d0a46;
+}
 
-        .uk-navbar-nav > li:hover > a,
-        .uk-navbar-nav > li > a[aria-expanded="true"] {
-            color: #7048e8;
-        }
+.uk-navbar-nav > li > a {
+    color: #0d0a46;
+    text-transform: lowercase;
+}
 
-        .uk-navbar-nav > li > a:active {
-            color: #7048e8;
-        }
+.uk-navbar-nav > li:hover > a,
+.uk-navbar-nav > li > a[aria-expanded="true"] {
+    color: #7048e8;
+}
 
-        .uk-navbar-nav > li.uk-active > a {
-            color: #7048e8;
-        }
+.uk-navbar-nav > li > a:active {
+    color: #7048e8;
+}
+
+.uk-navbar-nav > li.uk-active > a {
+    color: #7048e8;
+}
+
+header.uk-sticky-fixed {
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
+    transition: all 1s;
+    background: #fff url("../images/hero-bg.svg") no-repeat;
+    background-size: cover;
+}
+
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero img {
+    border-radius: 5px;
+    box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
+}
+
+.hero .uk-button {
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+.hero .download-link {
+    background-color: #7950f2;
+    &:hover {
+        background-color: #8828ff;
     }
-
-    header.uk-sticky-fixed {
-        box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
-        transition: all 1s;
-        background: #fff url("../images/hero-bg.svg") no-repeat;
-        background-size: cover;
-    }
-
-    .hero {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-top: 40px;
-        padding-bottom: 40px;
-
-        .content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        img {
-            border-radius: 5px;
-            box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
-        }
-
-        .uk-button {
-            border-radius: 40px;
-            margin-top: 20px;
-        }
-
-        .download-link {
-            background-color: #7950f2;
-            &:hover {
-                background-color: #8828ff;
-            }
-        }
-        .demo-link {
-            background-color: transparent;
-            &:hover {
-                background-color: #8828ff;
-            }
-        }
+}
+.hero .demo-link {
+    background-color: transparent;
+    &:hover {
+        background-color: #8828ff;
     }
 }
 
 .section-caption {
     text-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
-    img,
-    svg {
-        width: 60px;
-        height: 60px;
-    }
+}
+.section-caption img,
+.section-caption svg {
+    width: 60px;
+    height: 60px;
 }
 
 /* #features {
@@ -135,21 +134,21 @@ body {
 .with-play-button {
     display: inline-block;
     position: relative;
-    .play-button {
-        position: absolute;
-        background: transparent url(../images/play-circle.svg) no-repeat center;
-        background-size: 60px 60px;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.3;
-        transition: all 0.3s;
-        &:hover {
-            opacity: 1;
-            transition: all 0.3s;
-        }
-    }
+}
+.with-play-button .play-button {
+    position: absolute;
+    background: transparent url(../images/play-circle.svg) no-repeat center;
+    background-size: 60px 60px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+.with-play-button .play-button:hover {
+    opacity: 1;
+    transition: all 0.3s;
 }
 
 .feature-img {
@@ -163,37 +162,35 @@ body {
     background-repeat: no-repeat;
     text-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
     padding-left: 60px;
-    &.uk-text-right {
-        padding-right: 60px;
-        background-position: top right;
-    }
+}
+.feature-content .uk-text-right {
+    padding-right: 60px;
+    background-position: top right;
 }
 
 .uk-card-default {
     border-radius: 20px;
 }
 
-.download-card {
-    .os {
-        width: 60px;
-        height: 60px;
-    }
-    ul {
-        margin: 40px 0 0 0;
+.download-card .os {
+    width: 60px;
+    height: 60px;
+}
+.download-card ul {
+    margin: 40px 0 0 0;
+    padding: 0;
+    li {
         padding: 0;
-        li {
-            padding: 0;
-            list-style: none;
-            margin: 10px 0;
-        }
+        list-style: none;
+        margin: 10px 0;
     }
-    a.store-link {
-        text-transform: none;
-        min-width: 200px;
-        border-radius: 5px;
-        padding: 10px;
-        line-height: 1.2;
-    }
+}
+.download-card a.store-link {
+    text-transform: none;
+    min-width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    line-height: 1.2;
 }
 
 a[uk-slideshow-item] {
