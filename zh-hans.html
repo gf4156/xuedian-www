@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
   <head>
     <meta charset="utf-8" />
-    <title>xuedian ced - xuedian chinese english dictionary</title>
+    <title>学典英汉词典 - xuedian ced</title>
     <meta name="description" content="xuedian chinese english dictionary,學典英漢詞典,学典英汉词典" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="favicon.ico" />
@@ -11,16 +11,19 @@
     <link rel="stylesheet" href="assets/css/theme.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Noto+Sans+SC:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
 
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.7/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.7/dist/js/uikit-icons.min.js"></script>
 
     <style type="text/css">
       html {
-        font-family: "Nunito", sans-serif;
+        font-family: "Noto Sans SC", sans-serif;
         font-optical-sizing: auto;
-        font-weight: 400;
+        font-weight: normal;
         font-style: normal;
       }
     </style>
@@ -46,21 +49,21 @@
           <!--logo-->
           <div class="logo">
             <img src="assets/images/icon.png" width="40" />
-            <span>xuedian ced</span>
+            <span>学典英汉词典</span>
           </div>
 
           <!--nav bar-->
           <div class="uk-visible@m">
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
               <ul class="uk-navbar-nav">
-                <li><a href="#home" uk-scroll>home</a></li>
-                <li><a href="#features" uk-scroll>features</a></li>
-                <li><a href="#download" uk-scroll>download</a></li>
+                <li><a href="#home" uk-scroll>首页</a></li>
+                <li><a href="#features" uk-scroll>功能</a></li>
+                <li><a href="#download" uk-scroll>下载</a></li>
                 <li>
                   <a href="zh.html">繁體 <span uk-icon="link-external"></span></a>
                 </li>
                 <li>
-                  <a href="zh-hans.html">简体 <span uk-icon="link-external"></span></a>
+                  <a href="./" style="text-transform: none">English <span uk-icon="link-external"></span></a>
                 </li>
               </ul>
             </nav>
@@ -68,20 +71,20 @@
 
           <!--nav bar @ mobile-->
           <div class="uk-hidden@m">
-            <a class="uk-icon-button" uk-navbar-toggle-icon uk-toggle="target:#off_canvas"></a>
+            <a class="uk-icon-button" uk-icon="menu" uk-toggle="target:#off_canvas"></a>
             <div id="off_canvas" uk-offcanvas>
               <div class="uk-offcanvas-bar">
                 <button class="uk-offcanvas-close" type="button" uk-close></button>
-                <h3>NAVIGATION</h3>
+                <h3>导航</h3>
                 <ul class="uk-nav">
-                  <li><a href="#home" uk-scroll>home</a></li>
-                  <li><a href="#features" uk-scroll>features</a></li>
-                  <li><a href="#download" uk-scroll>download</a></li>
+                  <li><a href="#home" uk-scroll>首页</a></li>
+                  <li><a href="#features" uk-scroll>功能</a></li>
+                  <li><a href="#download" uk-scroll>下载</a></li>
                   <li>
                     <a href="zh.html">繁體 <span uk-icon="link-external"></span></a>
                   </li>
                   <li>
-                    <a href="zh-hans.html">简体 <span uk-icon="link-external"></span></a>
+                    <a href="./" style="text-transform: none">English <span uk-icon="link-external"></span></a>
                   </li>
                 </ul>
               </div>
@@ -96,10 +99,10 @@
           <div class="uk-child-width-1-1@m uk-child-width-1-2@l" uk-grid>
             <div class="content" uk-scrollspy="cls:uk-animation-slide-left">
               <div>
-                <h1 class="uk-heading-small">The Offline Chinese English Dictionary</h1>
-                <p>With about 370,000 headwords and 818,000 translations.</p>
-                <a class="download-link uk-button uk-button-large uk-button-primary" href="#download" uk-scroll>Download</a>
-                <a class="demo-link uk-button uk-button-large uk-button-primary" href="#features" uk-scroll>Learn more</a>
+                <h1 class="uk-heading-small">离线英汉词典</h1>
+                <p>拥有约 37 万词条和 81.8 万条翻译。</p>
+                <a class="download-link uk-button uk-button-large uk-button-primary" href="#download" uk-scroll>下载</a>
+                <a class="demo-link uk-button uk-button-large uk-button-primary" href="#features" uk-scroll>了解更多</a>
               </div>
             </div>
             <div uk-scrollspy="cls:uk-animation-slide-bottom; repeat:false">
@@ -114,7 +117,7 @@
 
     <!--section:features-->
     <div id="features" class="uk-section">
-      <h2 class="section-caption uk-heading-small uk-text-center" uk-scrollspy="cls: uk-animation-slide-top; repeat:false">features</h2>
+      <h2 class="section-caption uk-heading-small uk-text-center" uk-scrollspy="cls: uk-animation-slide-top; repeat:false">功能</h2>
 
       <div class="uk-container uk-container-xlarge uk-margin-large">
         <div
@@ -132,8 +135,8 @@
                 </a>
               </div>
               <div class="uk-card-body">
-                <h3 class="uk-card-title">Multi-language, <br class="uk-visible@l" />Dark Color Scheme</h3>
-                <p>We speak English, Traditional Chinese and Simplified Chinese. Choose between dark or light theme of your choice, use your favorite primary color.</p>
+                <h3 class="uk-card-title">多语言，<br class="uk-visible@l" />深色配色方案</h3>
+                <p>支持英文、繁体中文和简体中文。选择深色或淺色配色方案，使用您最喜欢的主题色。</p>
               </div>
             </div>
           </div>
@@ -150,8 +153,8 @@
                 </div>
               </div>
               <div class="uk-card-body">
-                <h3 class="uk-card-title">Intelligent &amp; Native <br class="uk-visible@l" />Language Query</h3>
-                <p>Use your native language to search. Synonymous search and reverse search are supported.</p>
+                <h3 class="uk-card-title">智能<br class="uk-visible@l" />母语查询</h3>
+                <p>使用您的母语进行查询。支持同义查询和反向查询。</p>
               </div>
             </div>
           </div>
@@ -161,16 +164,16 @@
             <div class="uk-card uk-card-small uk-card-hover uk-card-default">
               <div class="uk-card-media-top uk-padding-small" uk-lightbox="animation:fade;autoplay:true">
                 <div>
-                  <a class="uk-inline with-play-button" href="assets/images/china-taiwan.png" data-caption="Traditional Chinese">
+                  <a class="uk-inline with-play-button" href="assets/images/china-taiwan.png" data-caption="繁体中文">
                     <img class="feature-img" alt="appearance" data-src="assets/images/china-taiwan.png" uk-img />
                     <div class="play-button"></div>
                   </a>
-                  <a hidden class="uk-inline" href="assets/images/china-taiwan-2.png" data-caption="Simplified Chinese"></a>
+                  <a hidden class="uk-inline" href="assets/images/china-taiwan-2.png" data-caption="简体中文"></a>
                 </div>
               </div>
               <div class="uk-card-body">
-                <h3 class="uk-card-title">China-Taiwan <br class="uk-visible@l" />Coverage</h3>
-                <p>Contains both vocabulary of China Mainland and Taiwan, compatible with both cultures.</p>
+                <h3 class="uk-card-title">覆盖<br class="uk-visible@l" />两岸文化</h3>
+                <p>包含大陆和台湾词汇，兼容于两种文化。</p>
               </div>
             </div>
           </div>
@@ -189,10 +192,8 @@
               class="uk-panel uk-margin-remove-first-child uk-margin uk-width-xlarge@m uk-text-left@m uk-text-center uk-margin-large-bottom"
               uk-scrollspy="cls:uk-animation-slide-left"
             >
-              <h2 class="uk-margin-top uk-margin-remove-bottom">More Features</h2>
-              <div class="el-content uk-panel uk-margin-top">
-                Simple, nice and user-friendly dictionary application. <br class="uk-visible@l" />Only relevant and useful information.
-              </div>
+              <h2 class="uk-margin-top uk-margin-remove-bottom">更多功能</h2>
+              <div class="el-content uk-panel uk-margin-top">简单、漂亮且用戶友好的字典应用程式。<br class="uk-visible@l" />仅提供相关且有用的信息。</div>
             </div>
           </div>
           <div class="uk-width-2-3@m">
@@ -210,8 +211,8 @@
                         <img data-src="assets/images/check-circle.svg" width="60" height="60" uk-img />
                       </div>
                       <div class="uk-width-expand uk-margin-remove-first-child">
-                        <h3 class="uk-margin-top uk-margin-remove-bottom">Large Vocabulary</h3>
-                        <div class="uk-panel uk-margin-top">About 370,000 headwords, of which 220,000 are in Chinese and 150,000 are in English.</div>
+                        <h3 class="uk-margin-top uk-margin-remove-bottom">大词汇量</h3>
+                        <div class="uk-panel uk-margin-top">约 37 万词条，其中中文词条 22 万个，英文词条 15 万个。</div>
                       </div>
                     </div>
                   </div>
@@ -226,8 +227,8 @@
                         <img data-src="assets/images/check-circle.svg" width="60" height="60" uk-img />
                       </div>
                       <div class="uk-width-expand uk-margin-remove-first-child">
-                        <h3 class="uk-margin-top uk-margin-remove-bottom">Local Database</h3>
-                        <div class="uk-panel uk-margin-top">No network required, used completely offline.</div>
+                        <h3 class="uk-margin-top uk-margin-remove-bottom">本地数据库</h3>
+                        <div class="uk-panel uk-margin-top">无需网络，完全离线使用。</div>
                       </div>
                     </div>
                   </div>
@@ -242,8 +243,8 @@
                         <img data-src="assets/images/check-circle.svg" width="60" height="60" uk-img />
                       </div>
                       <div class="uk-width-expand uk-margin-remove-first-child">
-                        <h3 class="uk-margin-top uk-margin-remove-bottom">Authoritative Translation</h3>
-                        <div class="uk-panel uk-margin-top">About 148,000 authoritative translations, and 670,000 AI translations.</div>
+                        <h3 class="uk-margin-top uk-margin-remove-bottom">权威翻译</h3>
+                        <div class="uk-panel uk-margin-top">约 14.8 万条权威翻译，67 万条人工智能翻译。</div>
                       </div>
                     </div>
                   </div>
@@ -258,8 +259,8 @@
                         <img data-src="assets/images/check-circle.svg" width="60" height="60" uk-img />
                       </div>
                       <div class="uk-width-expand uk-margin-remove-first-child">
-                        <h3 class="uk-margin-top uk-margin-remove-bottom">To Bookmark &amp; Share</h3>
-                        <div class="uk-panel uk-margin-top">Add to favorite and share with others.</div>
+                        <h3 class="uk-margin-top uk-margin-remove-bottom">收藏和分享</h3>
+                        <div class="uk-panel uk-margin-top">加入收藏夹，与他人分享。</div>
                       </div>
                     </div>
                   </div>
@@ -274,8 +275,8 @@
                         <img data-src="assets/images/check-circle.svg" width="60" height="60" uk-img />
                       </div>
                       <div class="uk-width-expand uk-margin-remove-first-child">
-                        <h3 class="uk-margin-top uk-margin-remove-bottom">Vocabulary Memorization</h3>
-                        <div class="uk-panel uk-margin-top">Create daily study plan, random vocabulary order.</div>
+                        <h3 class="uk-margin-top uk-margin-remove-bottom">词汇学习</h3>
+                        <div class="uk-panel uk-margin-top">建立每日学习计划，词汇随机排序。</div>
                       </div>
                     </div>
                   </div>
@@ -290,8 +291,8 @@
                         <img data-src="assets/images/check-circle.svg" width="60" height="60" uk-img />
                       </div>
                       <div class="uk-width-expand uk-margin-remove-first-child">
-                        <h3 class="uk-margin-top uk-margin-remove-bottom">Cross Platform</h3>
-                        <div class="uk-panel uk-margin-top">Runs on Windows, Mac OS, Linux, Android and iPhone.</div>
+                        <h3 class="uk-margin-top uk-margin-remove-bottom">跨平台</h3>
+                        <div class="uk-panel uk-margin-top">可在 Windows、Mac OS、Linux、Android 和 iPhone 上运行。</div>
                       </div>
                     </div>
                   </div>
@@ -309,7 +310,7 @@
 
     <!--section:download-->
     <div id="download" class="uk-section">
-      <h2 class="section-caption uk-heading-small uk-text-center" uk-scrollspy="cls: uk-animation-slide-top; repeat:false">download</h2>
+      <h2 class="section-caption uk-heading-small uk-text-center" uk-scrollspy="cls: uk-animation-slide-top; repeat:false">下載</h2>
       <div class="uk-container uk-container-xlarge uk-margin-large">
         <!---->
         <div
@@ -371,7 +372,7 @@
               <h3 class="uk-card-title">iOS</h3>
               <ul>
                 <li>
-                  <a class="store-link uk-button uk-button-primary" href="https://apps.apple.com/app/id6504391742" target="_blank">App Store</a>
+                  <a class="store-link uk-button uk-button-primary" href="https://apps.apple.com/app/id6504391742" target="_blank">苹果应用商店</a>
                 </li>
               </ul>
             </div>
@@ -386,9 +387,7 @@
               <h3 class="uk-card-title">Android</h3>
               <ul>
                 <li>
-                  <a class="store-link uk-button uk-button-primary" href="https://galaxy.store/xuedian" target="_blank"
-                    ><span style="font-size: 0.5rem">SAMSUNG</span> Galaxy Store</a
-                  >
+                  <a class="store-link uk-button uk-button-primary" href="https://galaxy.store/xuedian" target="_blank">三星应用商店</a>
                 </li>
               </ul>
             </div>
@@ -405,7 +404,7 @@
         <div class="uk-child-width-1-1@s uk-child-width-1-2@m" uk-grid>
           <div>
             <div class="uk-text-default">
-              <a href="#home" uk-scroll>xuedian ced</a>
+              <a href="#home" uk-scroll>学典英汉词典</a>
             </div>
             <div class="uk-text-muted uk-text-meta">
               &copy;
@@ -422,7 +421,7 @@
                 >Privacy Policy <span uk-icon="link-external"></span
               ></a>
               <a class="uk-text-meta uk-margin-small-left" href="./zh.html">繁體 <span uk-icon="link-external"></span></a>
-              <a class="uk-text-meta uk-margin-small-left" href="zh-hans.html">简体 <span uk-icon="link-external"></span></a>
+              <a class="uk-text-meta uk-margin-small-left" href="./">English <span uk-icon="link-external"></span></a>
             </div>
           </div>
         </div>
