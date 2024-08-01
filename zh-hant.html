@@ -3,7 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <title>學典英漢詞典 - xuedian ced</title>
-    <meta name="description" content="xuedian chinese english dictionary,學典英漢詞典,学典英汉词典" />
+    <meta
+      name="keywords"
+      content="xuedian chinese english dictionary,學典英漢詞典,学典英汉词典,Translation App,Offline Dictionary,Bilingual Dictionary,Language Learning Tool,Vocabulary Reference"
+    />
+    <meta
+      name="description"
+      content="學典收錄了近 37 萬個詞條，其中漢語約佔 22 萬個，英文約佔 15 萬個，涵蓋漢英詞彙的發音、詞性、詞義、翻譯、同義詞、反義詞、來源、例句等。有超過 14.8 萬條權威漢英互譯和 67 萬條 AI 翻譯。學典採用本機資料庫，可完全離線使用。"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="favicon.ico" />
 
@@ -57,10 +64,21 @@
                 <li><a href="#features" uk-scroll>功能</a></li>
                 <li><a href="#download" uk-scroll>下載</a></li>
                 <li>
-                  <a href="./zh-hans.html" style="text-transform: none">简体 <span uk-icon="link-external"></span></a>
-                </li>
-                <li>
-                  <a href="./" style="text-transform: none">English <span uk-icon="link-external"></span></a>
+                  <a>
+                    <img data-src="assets/images/language.svg" width="16" height="16" uk-img />
+                    繁體
+                    <span uk-icon="triangle-down"></span>
+                  </a>
+                  <div uk-dropdown>
+                    <ul class="uk-nav uk-dropdown-nav">
+                      <li>
+                        <a href="zh-hans.html">简体</a>
+                      </li>
+                      <li>
+                        <a href="./">English</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -399,7 +417,7 @@
     </div>
 
     <div class="uk-section uk-section-secondary">
-      <div class="uk-container uk-container-large">
+      <div class="uk-container uk-container-xlarge">
         <div class="uk-child-width-1-1@s uk-child-width-1-2@m" uk-grid>
           <div>
             <div class="uk-text-default">

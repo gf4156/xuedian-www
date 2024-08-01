@@ -3,6 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <title>学典英汉词典 - xuedian ced</title>
+    <meta
+      name="keywords"
+      content="xuedian chinese english dictionary,學典英漢詞典,学典英汉词典,Translation App,Offline Dictionary,Bilingual Dictionary,Language Learning Tool,Vocabulary Reference"
+    />
+    <meta
+      name="description"
+      content="学典收录了近 37 万个词条，其中汉语约占 22 万个，英文约占 15 万个，涵盖汉英词汇的发音、词性、词义、翻译、同义词、反义词、来源、例句等。有超过 14.8 万条权威汉英互译和 67 万条 AI 翻译。学典采用本地数据库，可完全离线使用。"
+    />
     <meta name="description" content="xuedian chinese english dictionary,學典英漢詞典,学典英汉词典" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="favicon.ico" />
@@ -60,10 +68,21 @@
                 <li><a href="#features" uk-scroll>功能</a></li>
                 <li><a href="#download" uk-scroll>下载</a></li>
                 <li>
-                  <a href="zh-hant.html">繁體 <span uk-icon="link-external"></span></a>
-                </li>
-                <li>
-                  <a href="./" style="text-transform: none">English <span uk-icon="link-external"></span></a>
+                  <a>
+                    <img data-src="assets/images/language.svg" width="16" height="16" uk-img />
+                    简体
+                    <span uk-icon="triangle-down"></span>
+                  </a>
+                  <div uk-dropdown>
+                    <ul class="uk-nav uk-dropdown-nav">
+                      <li>
+                        <a href="zh-hant.html">繁體</a>
+                      </li>
+                      <li>
+                        <a href="./">English</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -402,7 +421,7 @@
     </div>
 
     <div class="uk-section uk-section-secondary">
-      <div class="uk-container uk-container-large">
+      <div class="uk-container uk-container-xlarge">
         <div class="uk-child-width-1-1@s uk-child-width-1-2@m" uk-grid>
           <div>
             <div class="uk-text-default">
